@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_material_supplier_tree" model="ir.ui.view">
+        <field name="name">material.supplier.tree</field>
+        <field name="model">material.supplier</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="material_count"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_material_supplier_form" model="ir.ui.view">
+        <field name="name">material.supplier.form</field>
+        <field name="model">material.supplier</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <field name="material_ids">
+                        <tree>
+                            <field name="code"/>
+                            <field name="name"/>
+                            <field name="material_type"/>
+                            <field name="buy_price"/>
+                        </tree>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_material_supplier" model="ir.actions.act_window">
+        <field name="name">Suppliers</field>
+        <field name="res_model">material.supplier</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

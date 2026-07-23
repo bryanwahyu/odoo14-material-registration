@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="supplier_cotton_world" model="material.supplier">
+        <field name="name">Cotton World</field>
+    </record>
+    <record id="supplier_fabric_house" model="material.supplier">
+        <field name="name">Fabric House</field>
+    </record>
+    <record id="supplier_jeans_co" model="material.supplier">
+        <field name="name">Jeans Co</field>
+    </record>
+
+    <record id="material_demo_1" model="material.material">
+        <field name="code">MAT-001</field>
+        <field name="name">Premium Cotton</field>
+        <field name="material_type">cotton</field>
+        <field name="buy_price">150.0</field>
+        <field name="supplier_id" ref="supplier_cotton_world"/>
+    </record>
+    <record id="material_demo_2" model="material.material">
+        <field name="code">MAT-002</field>
+        <field name="name">Denim Fabric</field>
+        <field name="material_type">jeans</field>
+        <field name="buy_price">220.0</field>
+        <field name="supplier_id" ref="supplier_jeans_co"/>
+    </record>
+
+</odoo>
