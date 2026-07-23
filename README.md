@@ -1,5 +1,7 @@
 # Material Registration (Odoo 14)
 
+[![Odoo 14 Tests](https://github.com/bryanwahyu/odoo14-material-registration/actions/workflows/tests.yml/badge.svg)](https://github.com/bryanwahyu/odoo14-material-registration/actions/workflows/tests.yml)
+
 Odoo 14 module to register materials to be sold. Covers the KeDA Tech
 Backend test: ERD, models, REST controllers, and unit tests.
 
